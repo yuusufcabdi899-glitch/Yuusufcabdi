@@ -1,0 +1,32 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Amina Warsame — Freelance Graphic Designer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#2438f5;--yellow:#ffdf3d;--coral:#ff6b57;--paper:#fbfaf7;--ink:#161638;--muted:#55557a;--card:#ffffff;--line:#d9d9e8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#10102a;--ink:#f3f3fb;--muted:#a8a8c8;--card:#1a1a3a;--line:#33335c}}
+:root[data-theme="dark"]{--paper:#10102a;--ink:#f3f3fb;--muted:#a8a8c8;--card:#1a1a3a;--line:#33335c}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 1.05rem/1.6 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",sans-serif;line-height:1.05;margin:0;letter-spacing:-.02em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.wrap{max-width:1100px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:1px solid var(--line)}
+nav{display:flex;justify-content:space-between;align-items:center;height:60px}
+.logo{font:800 1.2rem "Bricolage Grotesque",sans-serif;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav ul a{text-decoration:none;font-weight:500}
+nav ul a:hover{text-decoration:underline;text-underline-offset:5px}
+.menu{display:none;background:none;border:2px solid var(--ink);color:var(--ink);border-radius:8px;padding:6px 12px;font:inherit;cursor:pointer}
+@media(max-width:700px){.menu{display:block}nav ul{display:none;position:absolute;top:60px;left:0;right:0;background:var(--paper);flex-direction:column;padding:18px 20px;border-bottom:1px solid var(--line)}nav ul.open{display:flex}}
+/* Hero */
+.hero{background:var(--blue);color:#fff;overflow:hidden;position:relative}
+.hero .wrap{padding-top:70px;padding-bottom:80px;display:grid;gap:30px}
+.hero h1{font-size:clamp(2.8rem,10vw,7rem);font-weight:800;max-width:11ch}
+.hero p{max-width:46ch;font-size:1.2rem;margin:0}
